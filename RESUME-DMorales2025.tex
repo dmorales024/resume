@@ -1,0 +1,124 @@
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[margin=0.5in, top=0.4in, bottom=0.4in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage[T1]{fontenc}
+\usepackage{parskip}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% Section formatting — bold, uppercase, with a rule underneath
+\titleformat{\section}
+  {\bfseries\normalsize\uppercase}
+  {}
+  {0em}
+  {}
+  [\vspace{-0.6em}\rule{\textwidth}{0.4pt}]
+\titlespacing*{\section}{0pt}{0.6em}{0.3em}
+
+% Compact lists
+\setlist[itemize]{leftmargin=1.2em, topsep=1pt, itemsep=0pt, parsep=0pt}
+\setlist[itemize,2]{leftmargin=1.2em, topsep=0pt, itemsep=0pt, parsep=0pt, label=$\circ$}
+
+\newcommand{\entry}[2]{%
+  \noindent\textbf{#1}\hfill #2\par\vspace{-1pt}%
+}
+
+\newcommand{\subentry}[2]{%
+  \noindent\textit{#1}\hfill #2\par\vspace{1pt}%
+}
+
+\begin{document}
+
+% ---------- HEADER ----------
+\begin{center}
+  {\LARGE \textbf{Dmitri Raoul Morales}}\\[3pt]
+  dmitrimorales024@gmail.com \enspace$\cdot$\enspace 305-942-4152 \enspace$\cdot$\enspace 13951 SW 75 ST, Miami, FL 33183
+\end{center}
+
+\vspace{-0.2em}
+
+% ---------- EXPERIENCE ----------
+\section{Experience}
+
+\entry{Associate Software Engineer}{July 2024 -- Present}
+\subentry{The Walt Disney Company}{Orlando, Florida}
+\begin{itemize}
+  \item \textbf{DXT wAIfinder:}
+  \begin{itemize}
+    \item Engineered the \texttt{wai} CLI in Go to distribute rules, skills, agents, and commands into Cursor, Amazon Q Developer, and GitHub Copilot layouts, standardizing spec-driven development across DXT without locking teams to a single AI IDE.
+    \item Doubled sprint velocity, increased test case coverage by 5x, and improved application quality through higher-fidelity documentation generated via the tooling.
+  \end{itemize}
+  \item \textbf{Figaro 2.0 (Minnie Van):}
+  \begin{itemize}
+    \item Led major platform refactors and shipped Figaro 2.0, reducing tech debt through documented, DRY patterns, static configuration, and improved session and caching strategies across the Minnie Van service.
+    \item Grew into a PR review role as the team scaled, establishing quality gates and code standards across three offshore developers.
+  \end{itemize}
+  \item \textbf{Automated People Counter (APC):}
+  \begin{itemize}
+    \item Architected a greenfield Spring Boot service from the ground up, designing the AuroraDB schema and integrating APS sensors over SOAP with mTLS.
+    \item Introduced Liquibase for schema lifecycle management. First greenfield Liquibase deployment to production.
+    \item Delivered the first production ridership telemetry used for bus route planning and guest-experience decisions.
+  \end{itemize}
+  \item \textbf{Magic Mobile Express (Ticketing):}
+  \begin{itemize}
+    \item Built a Swift App Clip enabling Cast Members to convert emailed barcode media into MagicMobile passes saved directly to Apple Wallet, streamlining park-entry activation for Guests.
+  \end{itemize}
+\end{itemize}
+
+\vspace{0.1em}
+\entry{Software Engineer Professional Intern}{May 2023 -- July 2024}
+\subentry{The Walt Disney Company}{Orlando, Florida}
+\begin{itemize}
+  \item \textbf{Figaro (Minnie Van):}
+  \begin{itemize}
+    \item Engineered a full-stack application across an Angular frontend and Java Spring Boot REST API backend to replace legacy SharePoint-hosted tooling for Cast scheduling, ride operations, and guest PII handling.
+    \item Delivered the platform that became the single source of truth for Minnie Van operations, replacing a fragmented SharePoint workflow used across multiple Cast teams.
+  \end{itemize}
+\end{itemize}
+
+\vspace{0.1em}
+\entry{Software Engineer Professional Intern}{May 2022 -- August 2022}
+\subentry{The Walt Disney Company}{Orlando, Florida}
+\begin{itemize}
+  \item Demonstrated cross-platform mobile development viability by designing and delivering a proof-of-concept Flutter application targeting both iOS-native and web from a single codebase, integrated with RESTful services and a GitHub Actions build pipeline via Visual Studio App Center.
+\end{itemize}
+
+\vspace{0.1em}
+\entry{Undergraduate Researcher}{August 2023 -- 2024}
+\subentry{Palmeri Lab, Duke University}{Durham, North Carolina}
+\begin{itemize}
+  \item \textbf{\href{https://pratt.duke.edu/news/preventing-childhood-hearing-loss-worldwide/}{mHealth Tymp}:}
+  \begin{itemize}
+    \item Advanced a low-cost tympanometer device by authoring Zephyr and C firmware for dynamic speaker control driven by ear-canal volume estimates, and by migrating the team's PCB design workflow to KiCad in partnership with industry collaborators.
+  \end{itemize}
+\end{itemize}
+
+% ---------- EDUCATION ----------
+\section{Education}
+
+\entry{Duke University}{Durham, North Carolina}
+\subentry{Bachelor of Arts and Engineering, Computer Science and Biomedical Engineering}{May 2024}
+\begin{itemize}
+  \item GPA: \textbf{3.81 / 4.00} \enspace$\cdot$\enspace \textbf{2020} FAITH Endowment Scholar \enspace$\cdot$\enspace \textbf{2021--2023} FAITH Endowment STEM Scholar of Special Distinction
+\end{itemize}
+
+% ---------- LEADERSHIP ----------
+\section{Leadership}
+
+\begin{itemize}
+  \item \textbf{FIRST Tech Challenge --- Team Vanta 31000:} Mentor for competitive robotics; team qualified for Worlds; recognized by Orlando Mayor Buddy Dyer for the achievement.
+  \item Builds Godot game projects for applied engineering practice.
+\end{itemize}
+
+% ---------- SKILLS ----------
+\section{Skills}
+
+\textbf{Technologies:} Java, Spring Boot, Angular, TypeScript, Go, Python, Flutter, Swift, C, SQL, REST, SOAP, mTLS, Liquibase, Git, GitHub Actions, Visual Studio App Center, KiCad, Zephyr, PyTorch\\[2pt]
+\textbf{Languages:} English (Native), Greek (Fluent)
+
+\end{document}
